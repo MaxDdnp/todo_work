@@ -1,0 +1,30 @@
+<h1><center>All tasks</center></h1>
+
+<table style="width:800px", border="1", ALIGN="center", color= "black", bgcolor="#5186C0",font color="red";>
+<tr>
+  <td><center><font size="5" color="white">Name</font></center></td>
+  <td><center><font size="5" color="white">Status</font></center></td>
+  <td><center><font size="5" color="white">Project</font></center></td>
+  <td><center><font size="5" color="white">Actions</font></center></td>
+</tr>
+<tr>
+<% @tasks.each do |task| %>
+  <td><center><font size="4" color="black"><%= task.name %></font></center></td>
+        <td><center><font size="4" color="black"><%= task.status %></font></center></td>
+        <td><center><font size="4" color="black"><%= task.project.try :name %></font></center></td>
+        <td><center><font size="4" color="black"><%= link_to 'Show', task %>
+        <%= link_to 'Edit', edit_task_path(task) %>
+        <%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' } %></font></center></td>
+      </tr>
+    <% end %>
+</tr>
+</table>
+
+
+<br><br><br>
+
+
+
+<%= link_to '  New Task  ', new_task_path, {class: "new_project_button"} %>
+<br><br><br>
+<%= link_to '  Back  ', projects_path, {class: "all_task_button"} %>

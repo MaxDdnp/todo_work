@@ -1,0 +1,281 @@
+body {
+background-image: image-url('garage1.jpg');
+background-position: left top;
+background-repeat: repeat;
+margin: 0;
+padding: 0;
+font: 12px/18px Arial, sans-serif;
+min-height: 100%;
+}
+
+.add_proj {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.project_and_tasks{
+  width: 700px;
+  margin: auto;
+}
+
+.project {
+  margin: 20px 0 0 0;
+  height: 35px;
+  padding: 5px 0 5px 50px;
+  background: image-url('note.png') no-repeat 15px 50% #4169A7;
+}
+
+button.btn.btn-lg{
+  color: B2B8D4;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 3px 9px 0px 9px;
+}
+
+.project .name{
+  color:white;
+  font-family:"Times New Roman";
+  font-size: 19px;
+  vertical-align:middle;
+  float: left;
+  line-height: 25px;
+  padding-top: 0px;
+}
+
+.project .action {
+  float: right;
+  height: 35px;
+  padding-top: 0px;
+  margin: 0px 0px -5px 0px;
+
+  a {
+    display: block;
+    width: 30px;
+    height: 35px;
+    margin: 0 5px;
+  }
+}
+
+.task {
+  width: 700px;
+  height: 35px;
+  padding: 0px;
+  background: #DADADA;
+  overflow: hidden;
+  margin: 0;
+}
+
+.task .icon {
+  width: 20px;
+  height: 35px;
+  float: left;
+  padding: 5px 30px 0 5px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+button.btn.btn-success.btn-xs{
+  color: #5A9273;
+  background-color: transparent;
+  border-color: transparent;
+  background-image: none;
+}
+
+.input-group.input-group-sm.input{
+    position : relative;
+    height : 40%;
+    top: 5%;
+    margin : 0 auto;        
+    text-align:center;
+}
+
+.input-group-addon.success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 184, 92);
+    border-color: rgb(76, 174, 76);
+}
+
+.task .name {
+  height: 35px;
+  float: left;
+  padding: 6px 20px;
+}
+
+.task .name input {
+  width: 460px;
+  padding: 0 10px;
+}
+
+.task .button {
+  width: 140px;
+  float: right;
+  height: 30px;
+  padding: 0px 0 0 0;
+}
+
+.tasks {
+  background: #FCFED5;
+  list-style: none;
+  list-type: none;
+  padding: 0;
+  margin: 0;
+
+  .task-element {
+    height: 35px;
+    overflow: hidden;
+  }
+
+  .grey {
+    background: #e1e1e1;
+  }
+
+  .name {
+  border-left: 1px solid #efdadf;
+  border-right: 1px solid #e7ebea;
+  color: #8A8181;
+  padding: 8px;
+  width: 510px;
+  float: left;
+}
+
+  .actions {
+    float: right;
+    padding: 0;
+    margin: 0;
+
+    div {
+      float: left;
+      padding: 10px 5px;
+      margin: 5px 5px 0 0;
+    }
+  }
+}
+
+.tasks .name:hover {
+  color: #000000;
+}
+
+.tasks .checkbox {
+  width: 35px;
+  vertical-align:middle;
+  padding: 5px;
+  display: inline-block;
+}
+
+.checkbox {
+    float: left;
+    padding: 8px 10px;
+    border-right: 1px solid #efdadf;
+  }
+
+  .chk{
+    display: inline-block;
+}
+
+.tasks .action.order {width: 35px;
+  vertical-align:middle;
+  padding: 5px;
+  display: inline-block;
+}
+
+div.action.edit{
+  margin-right: 0px;
+  padding-right: 0px;
+}
+div.action.delete{
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.tasks .action.edit {
+  display: inline;
+  a {
+  width: 14px;
+  height: 14px;
+  vertical-align:middle;
+  display: inline-block;
+  float:right;
+  margin-right: 0px;
+  padding-right: 0px;
+  }
+}
+
+.tasks .action.delete {
+  display: inline;
+  a {
+  vertical-align:middle;
+  display: inline-block;
+  width:14px;
+  height:16px;
+  float:right;
+  margin-right: 0px;
+  padding-right: 0px;
+  }
+}
+
+button.btn.btn-xs{
+  color: #5A9273;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.button_add_task {
+  margin-bottom: 10;
+  display: inline-block;
+  vertical-align:middle;
+  cursor: pointer;
+  text-align: center;
+  background: #7BB293;
+  color: white;
+  font-size: 12pt;
+}
+
+.button_add_list {
+  display: inline-block;
+  vertical-align:middle;
+  cursor: pointer;
+  text-align: center;
+  background: #7BB293;
+  color: white;
+  font-size: 12pt;
+}
+
+.new_project_button {
+  background-color:#5186C0;
+  color:white;
+  margin-left: 300px;
+  border: 1px solid #000000;
+  font-size: 20pt;
+  padding: 11px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.all_task_button {
+  background-color:#5186C0;
+  color:white;
+  margin-left: 300px;
+  border: 1px solid #000000;
+  font-size: 20pt;
+  padding: 11px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#add_proj{
+  margin: -70px 0 0 -120px;
+  position: absolute;
+  top: 92%;
+  left: 53%;
+}
+
+.btn.btn-success {
+    color: #354971;
+    background-color: #4570b0;
+    background-image: linear-gradient(to bottom, #4570b0, #4570b0);
+    border-color: #4570B0 #4570B0 #4570B0;
+}
+.btn.btn-success:hover {
+    color: #354971;
+    background-color: #4570b0;
+    background-image: linear-gradient(to bottom, #4570b0, #4570b0);
+    border-color: #4570B0 #4570B0 #4570B0;
+}

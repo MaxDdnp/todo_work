@@ -1,0 +1,7 @@
+<h1>Edit project</h1>
+
+<%= form_for @project, url: { action: "update" }  do |f| %>
+  <label>Название</label>
+  <%= f.text_field :name %><br />
+  <p><%= f.submit "Сохранить проект" %></p>
+<% end %>
