@@ -10,7 +10,7 @@ class Task < ActiveRecord::Base
   private
 
   def check_deadline
-    if !deadline.blank? && deadline > Date.today
+    if !deadline.blank? && deadline < Date.today
       self.errors.add(:deadline, "can't be in the future")
     end
   end

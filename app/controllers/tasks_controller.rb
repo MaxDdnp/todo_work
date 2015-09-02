@@ -11,7 +11,7 @@ class TasksController < ApplicationController
 
     def edit
       @task = Task.find(params[:id])
-      render :show_form
+      render "edit"
     end
 
     def update
@@ -31,9 +31,9 @@ class TasksController < ApplicationController
     def save_task
       if @task.save
         @tasks = Task.all
-        render :hide_form
+        redirect_to projects_path
       else
-        render :show_form
+        render "edit"
       end
     end
 

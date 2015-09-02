@@ -33,6 +33,9 @@ gem 'autoprefixer-rails'
 
 gem 'simple_form'
 
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.15.35'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
