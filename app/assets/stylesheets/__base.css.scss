@@ -171,13 +171,21 @@ button.btn.btn-success.btn-xs{
     display: inline-block;
 }
 
+div.action.move{
+  margin-right: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+}
+
 div.action.edit{
   margin-right: 0px;
   padding-right: 0px;
+  margin-top: 0px;
 }
 div.action.delete{
   margin-right: 0px;
   padding-right: 0px;
+  margin-top: 0px;
 }
 .tasks .action.edit {
   display: inline;
@@ -189,7 +197,6 @@ div.action.delete{
   float:right;
   margin-right: 0px;
   padding-right: 0px;
-  margin-top: 0px;
   }
 }
 
@@ -203,7 +210,6 @@ div.action.delete{
   float:right;
   margin-right: 0px;
   padding-right: 0px;
-  margin-top: 0px;
   }
 }
 
