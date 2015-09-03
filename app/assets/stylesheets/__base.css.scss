@@ -159,22 +159,16 @@ button.btn.btn-success.btn-xs{
   vertical-align:middle;
   padding: 5px;
   display: inline-block;
+  margin-bottom: 0px;
 }
 
 .checkbox {
     float: left;
     padding: 8px 10px;
-    border-right: 1px solid #efdadf;
   }
 
   .chk{
     display: inline-block;
-}
-
-.tasks .action.order {width: 35px;
-  vertical-align:middle;
-  padding: 5px;
-  display: inline-block;
 }
 
 div.action.edit{
@@ -195,6 +189,7 @@ div.action.delete{
   float:right;
   margin-right: 0px;
   padding-right: 0px;
+  margin-top: 0px;
   }
 }
 
@@ -208,6 +203,7 @@ div.action.delete{
   float:right;
   margin-right: 0px;
   padding-right: 0px;
+  margin-top: 0px;
   }
 }
 

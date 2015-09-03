@@ -7,6 +7,11 @@ class Task < ActiveRecord::Base
     too_long: "must have at most %{count} words" }
   validate :check_deadline
 
+
+  def completed?
+    status == "done"
+  end
+
   private
 
   def check_deadline
@@ -14,4 +19,5 @@ class Task < ActiveRecord::Base
       self.errors.add(:deadline, "can't be in the future")
     end
   end
+
 end

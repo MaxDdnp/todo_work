@@ -26,6 +26,11 @@ class TasksController < ApplicationController
       @tasks = Task.all
     end
 
+    def complete
+      @task.update_attribute(:status, "Done")
+      redirect_to projects_path, , notice: "Todo item completed"
+    end
+
     private
 
     def save_task
