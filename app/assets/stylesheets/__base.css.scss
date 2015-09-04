@@ -94,6 +94,13 @@ button.btn.btn-success.btn-xs{
     border-color: rgb(76, 174, 76);
 }
 
+input.btn.btn-success{
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 184, 92);
+    border-color: rgb(76, 174, 76); 
+    background-image: none;
+}
+
 .task .name {
   height: 35px;
   float: left;
@@ -129,11 +136,12 @@ button.btn.btn-success.btn-xs{
   }
 
   .name {
-  border-left: 1px solid #efdadf;
+  border-left: 1px double #efdadf;
   border-right: 1px solid #e7ebea;
+  border-bottom: 1px solid #efdadf;
   color: #8A8181;
   padding: 8px;
-  width: 510px;
+  width: 545px;
   float: left;
 }
 
@@ -174,13 +182,15 @@ button.btn.btn-success.btn-xs{
 div.action.move{
   margin-right: 0px;
   padding-right: 0px;
-  margin-top: 0px;
+  margin-top: 2px;
 }
 
 div.action.edit{
   margin-right: 0px;
   padding-right: 0px;
   margin-top: 0px;
+  width: 45px;
+  padding-left: 0px;
 }
 div.action.delete{
   margin-right: 0px;

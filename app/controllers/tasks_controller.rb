@@ -1,4 +1,7 @@
 class TasksController < ApplicationController
+
+  before_action :set_task, except: [:create, :new]
+
     def new
       @task = Task.new
       render :show_form
@@ -10,25 +13,22 @@ class TasksController < ApplicationController
     end
 
     def edit
-      @task = Task.find(params[:id])
       render "edit"
     end
 
     def update
-      @task = Task.find(params[:id])
       @task.assign_attributes(task_params)
       save_task
     end
 
     def destroy
-      @task = Task.find(params[:id])
       @task.destroy
       @tasks = Task.all
     end
 
     def complete
-      @task.update_attribute(:status, "Done")
-      redirect_to projects_path, , notice: "Todo item completed"
+      @task.update_attribute(:status, "done")
+      redirect_to projects_path, notice: "Todo item completed"
     end
 
     private
@@ -42,7 +42,9 @@ class TasksController < ApplicationController
       end
     end
 
-    private
+    def set_task
+       @task = Task.find(params[:id])
+    end
 
     def task_params
       params.require(:task).permit(:name, :status, :project_id, :deadline)

@@ -16,7 +16,7 @@ class Task < ActiveRecord::Base
 
   def check_deadline
     if !deadline.blank? && deadline < Date.today
-      self.errors.add(:deadline, "can't be in the future")
+      self.errors.add(:deadline, "can't be in the past")
     end
   end
 
