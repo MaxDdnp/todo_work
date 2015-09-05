@@ -6,8 +6,10 @@
 <% if @projects.empty? %>
   <div class="add_proj">Add project to start</div>
 <% else %>
+
 <% @projects.each do |project| %>
 <div class="project_and_tasks" data-id="">
+<label class="errors"></label>
     <div class="project">
 
       <div class="name"><%= project.name %></div>
@@ -29,6 +31,7 @@
 
     <div class="task">
         <%= form_for(@task || Task.new) do |f| %>
+           
         <div class="icon">
           <button  type="button" class="btn btn-success btn-xs">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>

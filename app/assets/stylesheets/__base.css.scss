@@ -8,6 +8,9 @@ font: 12px/18px Arial, sans-serif;
 min-height: 100%;
 }
 
+.errors{
+  color: red;
+}
 .add_proj {
   text-align: center;
   font-size: 16px;
@@ -290,4 +293,16 @@ button.btn.btn-xs{
     background-color: #4570b0;
     background-image: linear-gradient(to bottom, #4570b0, #4570b0);
     border-color: #4570B0 #4570B0 #4570B0;
+}
+.pr_edit{
+  width: 400px;
+  margin: auto;
+}
+.ts_edit{
+  width: 400px;
+  margin: auto;
+}
+.pr_new{
+  width: 400px;
+  margin: auto;
 }

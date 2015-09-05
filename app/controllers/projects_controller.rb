@@ -24,20 +24,21 @@ class ProjectsController < ApplicationController
 
     # GET /projects/1/edit
     def edit
-      @project = Project.find(params[:id]).first
+      @project = Project.find(params[:id])
       render "edit"
     end
 
     def update
-      @project = Project.find(params[:id]).first
+      @project = Project.find(params[:id])
       @project.assign_attributes(project_params)
-      save_task
+      save_project
     end
 
     def destroy
       @project = Project.find(params[:id])
       @project.destroy
       @projects = Project.all
+      redirect_to projects_path
     end
 
       def save_project
@@ -51,6 +52,8 @@ class ProjectsController < ApplicationController
 
 
     private
+
+
       def project_params
         params.require(:project).permit(:name)
       end

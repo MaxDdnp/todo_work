@@ -9,7 +9,7 @@ class TasksController < ApplicationController
 
     def create
       @task = Task.new(task_params)
-      save_task
+        save_task
     end
 
     def edit
@@ -24,6 +24,7 @@ class TasksController < ApplicationController
     def destroy
       @task.destroy
       @tasks = Task.all
+      redirect_to projects_path
     end
 
     def complete
