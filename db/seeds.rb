@@ -5,5 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 # #   Mayor.create(name: 'Emanuel', city: cities.first)
- proj = Project.create!(name: 'First')
- Task.create(name: 'grocery shopping', status: 'undone', project_id: proj.id, deadline: "2013-08-14")
+ # proj = Project.create!(name: 'First')
+ # Task.create(name: 'grocery shopping', status: 'undone', project_id: proj.id, deadline: "2013-08-14")
